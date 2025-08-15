@@ -18,24 +18,24 @@ Generate a Bearer token using Basic OAuth authentication.
 
 **Headers:**
 ```
-Authorization: Basic bXNpbWJvX3RlY2hub2xvZ2llczptc2ltYm9fdGVjaG5vbG9naWVz
+Authorization: Basic bXNpbWJvX3RlY2hub2xvZ2llczptc2ltYm9fdGVjaG5vbG......
 ```
 
 **cURL Example:**
 ```bash
 curl --location 'https://sandbox.globpay.ai/api/v1' \
---header 'Authorization: Basic bXNpbWJvX3RlY2hub2xvZ2llczptc2ltYm9fdGVjaG5vbG9naWVz'
+--header 'Authorization: Basic bXNpbWJvX3RlY2hub2xvZ2llczptc2ltYm9fdGVjaG5vbG,.....'
 ```
 
 **Credentials:**
-- Username: `msimbo_technologies`
-- Password: `msimbo_technologies`
+- Username: `USERNAME`
+- Password: `PASSWORD`
 
 ### Successful Response (200)
 ```json
 {
     "expires_at": "2025-08-16T14:33:38+02:00",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTUzNDc2MTgsIm1lcmNoYW50SUQiOiJtc2ltYm9fdGVjaG5vbG9naWVzIiwidXNlcm5hbWUiOiJtc2ltYm9fdGVjaG5vbG9naWVzIn0.SHyy2z4zXJPAZWGc-phZQw1bLp94DyARXrIrQ7s0M5o"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTUzNDc2MTgsIm1lcmNoYW50SUQiOiJtc2ltYm9fdGVjaG5vbG9naWVzIiwidXNlcm5hbWUiOiJtc2ltYm9fdGVjaG5vbG9naWVzIn0.SHyy2z4zXJPA..."
 }
 ```
 
@@ -88,7 +88,7 @@ Authorization: Bearer {your_token}
 ```bash
 curl --location 'https://sandbox.globpay.ai/api/v1/globpay/card/initiate' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTUzNDg1MjIsIm1lcmNoYW50SUQiOiJtc2ltYm9fdGVjaG5vbG9naWVzIiwidXNlcm5hbWUiOiJtc2ltYm9fdGVjaG5vbG9naWVzIn0.jnK9O2DXbzb5B05w-Q0vw8tdY7WhiWMtcvFAmyzprj0' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTUzNDg1MjIsIm1lcmNoYW50SUQiOiJtc2ltYm9fdGVjaG5vbG9naWVzIiwidXNlcm5hbWUiOiJtc2ltYm9fdGVjaG5vbG9naWVzI.' \
 --data-raw '{
   "first_name": "John",
   "last_name": "Doe",
