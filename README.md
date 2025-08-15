@@ -14,7 +14,7 @@ Production: https://api.globpay.ai/api/v1
 ### Generate Access Token
 Generate a Bearer token using Basic OAuth authentication.
 
-**Endpoint:** `POST /api/v1`
+**Endpoint:** `GET /api/v1`
 
 **Headers:**
 ```
